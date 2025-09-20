@@ -4,7 +4,7 @@ import { Image } from "expo-image";
 
 const ImageViewer = () => {
   return (
-    <View style={styles.imageContainer}>
+    <View style={styles.buttonContainer}>
       <Image
         style={styles.image}
         source={require("/Users/asius/Documents/codebase/react-native-app-dev/assets/images/icon.png")}
@@ -14,9 +14,15 @@ const ImageViewer = () => {
 };
 
 const styles = StyleSheet.create({
-  imageContainer: {
-    flex: 1,
+  buttonContainer: {
+    width: 320,
+    height: 68,
+    marginHorizontal: 20,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 3,
   },
+  
   image: {
     width: 320,
     height: 440,
